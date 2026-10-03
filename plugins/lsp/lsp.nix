@@ -22,8 +22,10 @@
         };
         nil_ls = {
           enable = true;
-          autoArchive = false;
-          autoEvalInputs = false;
+          settings.nix.flake = {
+            autoArchive = false;
+            autoEvalInputs = false;
+          };
         };
         ts_ls = {
           enable = true;
